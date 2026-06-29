@@ -1,0 +1,24 @@
+body{
+    background:  linear-gradient(10deg, #0a0f2c, #1a1f4a, #0f3460) ;
+}
+.form-select{
+    margin-top: 15px;
+}
+#informacion{
+    margin-top: 30px;
+}
+.juntar{
+    padding: 70px;
+}
+#busqueda_artista{
+    display: flex;
+    gap: 20px;
+    align-items: end;
+}
+.btn{
+    height: 50px;
+}
+.navbar-brand {
+ color: rgb(182, 182, 219)!important;
+    font-weight: bold;
+}

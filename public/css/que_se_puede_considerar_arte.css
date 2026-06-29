@@ -1,0 +1,110 @@
+/* SELECTOR UNIVERSAL */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* BODY */
+body{
+    font-family: Arial;
+    background-image: url(../IMG/que\ se\ pude\ considerar\ arte.jpg); 
+}
+
+/* HEADER (SELECTOR ID) */
+#titulo{
+    background:#dcdcdc;
+    text-align:center;
+    padding:20px;
+}
+
+/* INTRO */
+#intro{
+    background:plum;
+    margin:40px;
+    padding:25px;
+    border-radius:8px;
+}
+
+/* SELECTOR HIJO DIRECTO */
+#intro > h2{
+    margin-bottom:15px;
+    color:mediumslateblue;
+}
+
+/* SELECTOR PADRE */
+#intro p{
+    margin-bottom:15px;
+    line-height:1.6;
+}
+
+/* CONTENEDOR TARJETAS */
+#tipos{
+    display:flex;
+    justify-content: space-around; /* IMPORTANTE */
+    margin:40px;
+    gap: 30px;
+}
+
+/* TARJETAS */
+.tarjeta{
+    background:#E8F1F8;
+    width:100%;
+    padding:25px;
+    border-radius:8px;
+    text-align:center;
+    
+}
+
+/* HIJO CONTINUO */
+.tarjeta h3 + p{
+    margin-top:15px;
+}
+.tarjeta h5 + p{
+    margin-top:15px;
+}
+/* LISTAS */
+.tarjeta ul{
+    text-align:left;
+    margin:15px;
+}
+
+/* IMÁGENES */
+.tarjeta img{
+    width:70%;
+    margin:20px auto;
+    display:block;
+    border-radius:6px;
+}
+
+/* TEXTO EJEMPLO */
+.ejemplo{
+    font-style:italic;
+    color:#555;
+}
+h3{
+    color: rgb(1, 5, 4);
+}
+#boton{
+    background-color:#000ceb ;
+    text-align: center;
+    font-weight: bold;
+    margin:15px;
+    text-decoration: none;
+    color:#e723e0;
+    padding: 10px;
+    border-radius: 10px;
+    border:2px solid black;
+}
+@media (max-width:900px){
+    #tipos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .conceptual{
+        grid-column: 1/3;
+    }
+    .abstracto{
+        grid-column: 1/3;
+    }
+}

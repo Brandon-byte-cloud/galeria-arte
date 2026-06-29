@@ -1,0 +1,107 @@
+body{
+    margin:0;
+    font-family: Arial;
+    background-image: url("../IMG/que_es_arte.jpg");
+    background-attachment: fixed;
+
+}
+
+header{
+    background:gray;
+    text-align:center;
+    padding:20px;
+    border:2px solid black;
+}
+
+.intro{
+    background:#2F3E6E;;
+    margin:30px;
+    padding:20px;
+    border-radius:10px;
+    border:2px solid black;
+    color: white;
+}
+
+.titulo-seccion{
+    text-align:center;
+    background:#2F3E6E;
+    margin:30px;
+    padding:10px;
+    border-radius:8px;
+    color: #F4C430;
+    border:2px solid black;
+}
+
+
+.seccion{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:30px;
+    padding:25px;
+    border-radius:10px;
+    color: #F8F6F0;
+    border:2px solid black;
+}
+
+.texto{
+    width:60%;
+}
+
+.imagen{
+    width:30%;
+}
+
+.imagen img{
+    width:100%;
+    border-radius:8px;
+}
+
+/* INVERTIR */
+.invertido{
+    flex-direction: row-reverse;
+}
+
+/* COLORES POR SECCIÓN */
+.fondo{ background:#2F3E6E;  }
+
+/* POEMA */
+.poema{
+    font-style: italic;
+    font-size:18px;
+    text-align:center;
+    margin-top:20px;
+}
+#boton{
+    background-color:#FFD84D ;
+    text-align: center;
+    margin:15px;
+    text-decoration: none;
+    color:#3B6EEA;
+    padding: 10px;
+    border-radius: 10px;
+    border:2px solid black;
+}
+h3{
+    color:#A9C6FF
+}
+@media (max-width:600px){
+
+    .seccion{
+        flex-direction: column;
+    }
+
+    .invertido{
+        flex-direction: column-reverse;
+    }
+
+    .texto, .imagen{
+        width: 100%;
+    }
+
+    .imagen img{
+        width: 100%;
+        height: auto;
+    }
+
+}
